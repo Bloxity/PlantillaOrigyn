@@ -20,7 +20,9 @@
                 location.href = "Visor-Principal.html";
             } else if (usuario == "empresa" && pass == "123456") {
                 location.href = "Listado_Expendientes_Empresa.html"
-            } else {
+            }else if(usuario == "notario" && pass == "123456") {
+                location.href = "index.html"
+            }else {
                 alert("Usuario o Contraseña Incorrectos");
             }
         }
