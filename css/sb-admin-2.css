@@ -10237,8 +10237,8 @@ a:focus {
 }
 
 .bg-gradient-primary {
-    background-color: #4e73df;
-    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    background-color: #345064;
+    background-image: linear-gradient(180deg, #345064 10%, #345064 100%);
     background-size: cover;
 }
 
@@ -11605,9 +11605,4 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
     width: 100%;
-}
-
-.divazul {
-    border-color: #4e73df !important;
-    border-style: solid;
 }
