@@ -19,19 +19,6 @@
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <style>
-        .divazul {
-            border-color: #4e73df !important;
-            border-style: solid;
-        }
-        
-        img {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
-            width: 150px;
-        }
-    </style>
 </head>
 
 <body id="page-top">
@@ -45,13 +32,16 @@
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-building"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3"> Empresa "Mexico"</div>
+                <div class="sidebar-brand-text mx-3">Empresa "Mexico"</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
+                <a class="nav-link" href="indexEmpresa.html">
+                    <i class="fas fa-fw fa-house-user"></i>
+                    <span>Dashboard</span></a>
                 <a class="nav-link" href="Listado_Expendientes_Empresa.html">
                     <i class="fas fa-fw fa-list"></i>
                     <span>Lista de Empresas</span></a>
@@ -91,7 +81,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Miguel Martinez</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Empresa</span>
                                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
                             </a>
                             <!-- Dropdown - User Information -->
@@ -111,94 +101,94 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
                 </nav>
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-                    <div class="divazul col-md-12">
-                        <div class="row">
-                            <div class="col-md-2" style="float:left;">
-                                <img src="img/bloxity.PNG">
+                <div class="col-xl-12 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-sm-flex align-center justify-content-between mb-4">
+                                <h1 class="h3 mb-0 text-gray-800">Listado de Expedientes</h1>
                             </div>
-                            <div class="col-md-10" style="float:left;">
-                                <h1 style="text-decoration: underline #4e73df;">Mis Expedientes</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <p></p>
-                    <p></p>
-                    <div class="row">
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-12 col-md-12 mb-4">
-                            <div class="card shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="mb-4">
-                                                <div class="row">
-                                                    <div class="col-md-4">
+
+                            <div class="card border-primary mb-12">
+                                <div class="card-body text-primary">
+                                    <div class="col-md-12">
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <div class="row ">
+                                                    <div class="col-4">
                                                         <div class="row">
-                                                            <div class="col-md-6 text-center">
-                                                                <h5>Fecha Desde</h5>
+                                                            <div class="col-md-5">
+                                                                <label class="my-1 mr-4">Fecha desde</label>
                                                             </div>
                                                             <div class="col-md-6">
-                                                                <input type="date" name="Fecha" class="form-control">
+                                                                <input type="date" class="form-control">
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4">
+                                                    <div class="col-4">
                                                         <div class="row">
-                                                            <div class="col-md-6 text-center">
-                                                                <h5>Hasta</h5>
+                                                            <div class="col-md-3">
+                                                                <label class="my-1 mr-4">Hasta</label>
                                                             </div>
                                                             <div class="col-md-6">
-                                                                <input type="date" name="Fecha" class="form-control">
+                                                                <input type="date" class="form-control">
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4">
+                                                    <div class="col-4">
                                                         <div class="row">
-                                                            <div class="col-md-6 text-center">
-                                                                <h5>Estatus</h5>
+                                                            <div class="col-md-2">
+                                                                <label class="my-1 mr-4">Estatus</label>
                                                             </div>
-                                                            <div class="col-md-6">
-                                                                <select name="select" class="form-control">
-                                                                <option value="value1" selected>Todos</option>
-                                                                <option value="value2">Pendiente</option>
-                                                                <option value="value3">Rechazado</option>
-                                                              </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p></p>
-                                            <div class="mb-4">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="row">
-                                                            <div class="col-md-2 text-center">
-                                                                <h5>Buscar</h5>
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                <input type="text" class="form-control" placeholder="No. Expediente / RFC / Razon Social / Giro">
+                                                            <div class="col-md-9">
+                                                                <select class="form-control">
+                                                                    <option selected>Seleciona una opción</option>
+                                                                    <option value="1">Todos</option>
+                                                                    <option value="2">Firmado</option>
+                                                                    <option value="3">Pendiente</option>
+                                                                    <option value="4">Rechazado</option>
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="row ">
+                                            <div class="col-10">
+                                                <div class="row">
+                                                    <div class="col-md-1">
+                                                        <label class="my-1 mr-1">Buscar</label>
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        <div class="input-group mb-2 mr-sm-2">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text">
+                                                                    <i class="fas fa-search fa-sm"></i>
+                                                                </div>
+                                                            </div>
+                                                            <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="No.Expediente/ RFC / Razón Social / Giro">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="row">
+                                                    <div class="col-lg-10">
+                                                        <button type="button" class="btn btn-primary float-right">
+                                              <i class="far fa-"></i>&nbsp;Consultar
+                                          </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-body">
+                            </div><br><br>
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="TableName" width="100%" cellspacing="0" style="text-align: center;">
                                     <thead>
@@ -219,13 +209,13 @@
                                             <td>Industrial</td>
                                             <td style="background: green; color:white;">Firmato/Valido</td>
                                             <td style="text-align: center;">
-                                                <button type="button" class="btn btn-info" data-toggle="modal" id="BtnVer" data-target="#modalArchivo">
+                                                <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" id="BtnVer" data-target="#modalArchivo">
+                                                    <!-- <i class="fas fa-eye fa-sm text-white-20"></i> -->
                                                     Ver
                                                 </button>
-                                                <a class="btn btn-primary" href="documentos/Ejemplo_Resumen.pdf" download target="_blank">
-                                                    Descargar
-                                                </a>
-                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCompartir">
+                                                <a href="../img/Ejemplo_Resumen.pdf" download="Archivo" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-20"></i> Descargar</a>
+                                                <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-warning shadow-sm" data-toggle="modal" data-target="#modalCompartir">
+                                                    <!-- <i class="fas fa-share-alt fa-sm text-white-20"></i> -->
                                                     Compartir
                                                 </button>
                                             </td>
@@ -238,9 +228,9 @@
                                             <td style="background: red; color:white;">Rechazado</td>
                                             <td style="text-align: center">
                                                 <a href="Corregir_Documentos.html">
-                                                    <button type="button" class="btn btn-danger">
-                                                        Corregir
-                                                    </button>
+                                                    <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">
+                                                    Corregir
+                                                </button>
                                                 </a>
                                             </td>
                                         </tr>
@@ -249,159 +239,183 @@
                                             <td>BBB010101BBB</td>
                                             <td>Soluciones Tecnologicas SAS de CV</td>
                                             <td>Servicios</td>
-                                            <td style="text-align: center;">Pendiente</td>
+                                            <td style="text-align: center;background-color: #595f5999;color:white;">Pendiente</td>
                                             <td style="text-align: center;">
                                                 <a href="Enviar_A_Firma.html">
-                                                    <button type="button" class="btn btn-dark">
+                                                    <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-dark shadow-sm">
                                                         Enviar A Firma
                                                     </button>
                                                 </a>
-
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
+
                         </div>
                     </div>
                 </div>
-                <!-- /.container-fluid -->
-            </div>
-            <!-- End of Main Content -->
-            <!-- Footer -->
+
+                <!-- End of Main Content -->
+                <!-- Footer -->
 
 
-            <div class="modal inmodal fade" id="modalArchivo" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header" style="padding: 15px 15px">
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <h4 class="modal-title" style="text-align: center;">Ver Documento</h4>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body" style="padding: 2px 10px 10px 10px;">
-                            <div class="text-center m-t-lg">
-                                <iframe src="documentos/Ejemplo_Resumen.pdf" width="100%" height="680px"></iframe>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="modal inmodal fade" id="modalCompartir" tabindex="-1" role="dialog" aria-hidden="true" style="padding: 200px;">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header" style="padding: 15px 15px">
-                            <div class="col-md-10">
-                                <h2 class="modal-title" style="text-align: center;">Compartir</h2>
-
-                            </div>
-                            <div>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                        </div>
-                        <div class="modal-body" style="padding: 2px 10px 10px 10px;">
-                            <div class="text-center m-t-sm">
-                                <br>
-                                <div class="col-md-12">
-                                    <img src="img/CodigoQr.PNG" style="width: 30%;height: 30%;">
-                                </div>
-                                <br>
+                <div class="modal inmodal fade" id="modalArchivo" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header" style="padding: 15px 15px">
                                 <div class="col-md-12">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <h2>Correo</h2>
+                                        <div class="col-md-8">
+                                            <h4 class="modal-title" style="text-align: center;">Ver Documento</h4>
                                         </div>
-                                        <div class="col-md-5">
-                                            <input type="text" placeholder="Escribe tu correo" class="form-control">
+                                        <div class="col-md-4">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            <div class="modal-body" style="padding: 2px 10px 10px 10px;">
+                                <div class="text-center m-t-lg">
+                                    <iframe src="documentos/Ejemplo_Resumen.pdf" width="100%" height="680px"></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="../img/Ejemplo_Resumen.pdf" download="Archivo" class="btn btn-success"><i class="fas fa-download fa-sm text-white-20"></i> Descargar</a>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="modal inmodal fade" id="modalCompartir" tabindex="-1" role="dialog" aria-hidden="true" style="padding: 200px;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" style="padding: 15px 15px">
+                                <div class="col-md-10">
+                                    <h4 class="modal-title" style="text-align: center;">Compartir Expediente</h4>
+                                </div>
+                                <div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                </div>
+                            </div>
+                            <div class="modal-body" style="padding: 2px 10px 10px 10px;">
+                                <div class="text-center m-t-xl">
+                                    <br>
+                                    <div class="col-md-12">
+                                        <img src="img/CodigoQr.PNG" style="width: 50%;height: 30%;">
+                                    </div>
+                                    <br>
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h4>Correo</h4>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="text" placeholder="Escribe tu correo" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h4>Link</h4>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="text" placeholder="Ingresa el Link" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logout Modal-->
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesion</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">¿Estas seguro que deseas cerrar la sesión?</div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" type="button" data-dismiss="modal">No</button>
+                                <a class="btn btn-primary" href="login.html">Si</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Your Website 2020</span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End of Footer -->
             </div>
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
+            <!-- End of Content Wrapper -->
+
         </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
 
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+        <!-- Page level plugins -->
+        <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
+        <!-- Page level custom scripts -->
+        <script src="js/demo/datatables-demo.js"></script>
 
-
-    <script>
-             $('#TablaListaExpediente').DataTable({
-            "language": {
-                "sProcessing":    "Procesando...",
-                "sLengthMenu":    "Mostrar _MENU_ registros",
-                "sZeroRecords":   "No se encontraron resultados",
-                "sEmptyTable":    "Ningún dato disponible en esta tabla",
-                "sInfo":          "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "sInfoEmpty":     "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "sInfoFiltered":  "(filtrado de un total de _MAX_ registros)",
-                "sInfoPostFix":   "",
-                "sSearch":        "Buscar:",
-                "sUrl":           "",
-                "sInfoThousands":  ",",
-                "sLoadingRecords": "Cargando...",
-                "oPaginate": {
-                    "sFirst":    "Primero",
-                    "sLast":    "Último",
-                    "sNext":    "Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "oAria": {
-                    "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+        <script>
+            $('#TableName').DataTable({
+                "language": {
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Mostrar _MENU_ registros",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Buscar:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    }
                 }
-            }
-      });
-    </script>
+            });
+        </script>
 </body>
 
 </html>
