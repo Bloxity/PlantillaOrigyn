@@ -39,7 +39,7 @@
             <hr class="sidebar-divider my-0">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="Nueva_Empresa.html">
+                <a class="nav-link" href="indexEmpresa.html">
                     <i class="fas fa-fw fa-house-user"></i>
                     <span>Dashboard</span></a>
                 <a class="nav-link" href="Listado_Expendientes_Empresa.html">
@@ -76,9 +76,6 @@
                         <div class="input-group">
                             <img src="img/logoOrigyn.png" style="max-width: 100%; width: auto; height: auto;">
                         </div>
-                        <div class="input-group">
-                            sss
-                        </div>
                     </form>
                     <ul class="navbar-nav ml-auto">
                         <!-- Nav Item - User Information -->
@@ -108,160 +105,157 @@
                 </nav>
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-12 col-md-12 mb-4">
-                            <div class="card shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters text-primary">
-                                        <div class="col-md-12">
-                                            <div class="form-group row">
-                                                <div class="col-md-12">
-                                                    <div class="row ">
-                                                        <div class="col-4">
-                                                            <div class="row">
-                                                                <div class="col-md-5">
-                                                                    <label class="my-1 mr-4">Fecha desde</label>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <input type="date" class="form-control">
-                                                                </div>
+                <div class="col-xl-12 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-sm-flex align-center justify-content-between mb-4">
+                                <h1 class="h3 mb-0 text-gray-800">Listado de Expedientes</h1>
+                            </div>
+
+                            <div class="card border-primary mb-12">
+                                <div class="card-body text-primary">
+                                    <div class="col-md-12">
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <div class="row ">
+                                                    <div class="col-4">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <label class="my-1 mr-4">Fecha desde</label>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input type="date" class="form-control">
                                                             </div>
                                                         </div>
-                                                        <div class="col-4">
-                                                            <div class="row">
-                                                                <div class="col-md-3">
-                                                                    <label class="my-1 mr-4">Hasta</label>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <input type="date" class="form-control">
-                                                                </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <label class="my-1 mr-4">Hasta</label>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input type="date" class="form-control">
                                                             </div>
                                                         </div>
-                                                        <div class="col-4">
-                                                            <div class="row">
-                                                                <div class="col-md-2">
-                                                                    <label class="my-1 mr-4">Estatus</label>
-                                                                </div>
-                                                                <div class="col-md-9">
-                                                                    <select class="form-control">
-                                                                        <option selected>Seleciona una opción</option>
-                                                                        <option value="1">Todos</option>
-                                                                        <option value="2">Firmado</option>
-                                                                        <option value="3">Pendiente</option>
-                                                                        <option value="4">Rechazado</option>
-                                                                    </select>
-                                                                </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="row">
+                                                            <div class="col-md-2">
+                                                                <label class="my-1 mr-4">Estatus</label>
+                                                            </div>
+                                                            <div class="col-md-9">
+                                                                <select class="form-control">
+                                                                    <option selected>Seleciona una opción</option>
+                                                                    <option value="1">Todos</option>
+                                                                    <option value="2">Firmado</option>
+                                                                    <option value="3">Pendiente</option>
+                                                                    <option value="4">Rechazado</option>
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row ">
-                                                <div class="col-10">
-                                                    <div class="row">
-                                                        <div class="col-md-2">
-                                                            <label class="my-1 mr-1">Buscar</label>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <div class="input-group mb-2 mr-sm-2">
-                                                                <div class="input-group-prepend">
-                                                                    <div class="input-group-text">
-                                                                        <i class="fas fa-search fa-sm"></i>
-                                                                    </div>
+                                        </div>
+
+                                        <div class="row ">
+                                            <div class="col-10">
+                                                <div class="row">
+                                                    <div class="col-md-1">
+                                                        <label class="my-1 mr-1">Buscar</label>
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        <div class="input-group mb-2 mr-sm-2">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text">
+                                                                    <i class="fas fa-search fa-sm"></i>
                                                                 </div>
-                                                                <input type="text" class="form-control" placeholder="No.Expediente/ RFC / Razón Social / Giro">
                                                             </div>
+                                                            <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="No.Expediente/ RFC / Razón Social / Giro">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-2">
-                                                    <div class="row">
-                                                        <div class="col-lg-10">
-                                                            <button type="button" class="btn btn-primary float-right">
-                                                          <i class="far fa-"></i>&nbsp;Consultar
-                                                      </button>
-                                                        </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="row">
+                                                    <div class="col-lg-10">
+                                                        <button type="button" class="btn btn-primary float-right">
+                                              <i class="far fa-"></i>&nbsp;Consultar
+                                          </button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div><br><br>
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="TableName" width="100%" cellspacing="0" style="text-align: center;">
+                                    <thead>
+                                        <tr>
+                                            <th>No. Expediente</th>
+                                            <th>RFC</th>
+                                            <th>Razon Social</th>
+                                            <th>Giro</th>
+                                            <th>Estatus</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>A0009001</td>
+                                            <td>AAA010101AAA</td>
+                                            <td>Importaciones Rodriguez SA de CV</td>
+                                            <td>Industrial</td>
+                                            <td style="background: green; color:white;">Firmato/Valido</td>
+                                            <td style="text-align: center;">
+                                                <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" id="BtnVer" data-target="#modalArchivo">
+                                                    <!-- <i class="fas fa-eye fa-sm text-white-20"></i> -->
+                                                    Ver
+                                                </button>
+                                                <a href="../img/Ejemplo_Resumen.pdf" download="Archivo" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-20"></i> Descargar</a>
+                                                <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-warning shadow-sm" data-toggle="modal" data-target="#modalCompartir">
+                                                    <!-- <i class="fas fa-share-alt fa-sm text-white-20"></i> -->
+                                                    Compartir
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>A0009003</td>
+                                            <td>CCC010101CCC</td>
+                                            <td>Comercializadora Mexicana SA de CV</td>
+                                            <td>Comercial</td>
+                                            <td style="background: red; color:white;">Rechazado</td>
+                                            <td style="text-align: center">
+                                                <a href="Corregir_Documentos.html">
+                                                    <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">
+                                                    Corregir
+                                                </button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> </td>
+                                            <td>BBB010101BBB</td>
+                                            <td>Soluciones Tecnologicas SAS de CV</td>
+                                            <td>Servicios</td>
+                                            <td style="text-align: center;background-color: #595f5999;color:white;">Pendiente</td>
+                                            <td style="text-align: center;">
+                                                <a href="Enviar_A_Firma.html">
+                                                    <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-dark shadow-sm">
+                                                        Enviar A Firma
+                                                    </button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                        </div>
-                        <!-- DataTales Example -->
-                        <div class="card shadow mb-4 col-md-12">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered" id="TableName" width="100%" cellspacing="0" style="text-align: center;">
-                                        <thead>
-                                            <tr>
-                                                <th>No. Expediente</th>
-                                                <th>RFC</th>
-                                                <th>Razon Social</th>
-                                                <th>Giro</th>
-                                                <th>Estatus</th>
-                                                <th>Acciones</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>A0009001</td>
-                                                <td>AAA010101AAA</td>
-                                                <td>Importaciones Rodriguez SA de CV</td>
-                                                <td>Industrial</td>
-                                                <td style="background: green; color:white;">Firmato/Valido</td>
-                                                <td style="text-align: center;">
-                                                    <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" id="BtnVer" data-target="#modalArchivo">
-                                                        <!-- <i class="fas fa-eye fa-sm text-white-20"></i> -->
-                                                        Ver
-                                                    </button>
-                                                    <a href="../img/Ejemplo_Resumen.pdf" download="Archivo" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-20"></i> Descargar</a>
-                                                    <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-warning shadow-sm" data-toggle="modal" data-target="#modalCompartir">
-                                                        <!-- <i class="fas fa-share-alt fa-sm text-white-20"></i> -->
-                                                        Compartir
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>A0009003</td>
-                                                <td>CCC010101CCC</td>
-                                                <td>Comercializadora Mexicana SA de CV</td>
-                                                <td>Comercial</td>
-                                                <td style="background: red; color:white;">Rechazado</td>
-                                                <td style="text-align: center">
-                                                    <a href="Corregir_Documentos.html">
-                                                        <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">
-                                                        Corregir
-                                                    </button>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td> </td>
-                                                <td>BBB010101BBB</td>
-                                                <td>Soluciones Tecnologicas SAS de CV</td>
-                                                <td>Servicios</td>
-                                                <td style="text-align: center;background-color: #595f5999;color:white;">Pendiente</td>
-                                                <td style="text-align: center;">
-                                                    <a href="Enviar_A_Firma.html">
-                                                        <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-dark shadow-sm">
-                                                            Enviar A Firma
-                                                        </button>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
-                    <!-- /.container-fluid -->
                 </div>
+
                 <!-- End of Main Content -->
                 <!-- Footer -->
 
@@ -398,36 +392,6 @@
         <!-- Page level custom scripts -->
         <script src="js/demo/datatables-demo.js"></script>
 
-<<<<<<< HEAD
-    <script>
-             $('#TablaListaExpediente').DataTable({
-            "language": {
-                "sProcessing":    "Procesando...",
-                "sLengthMenu":    "Mostrar _MENU_ registros",
-                "sZeroRecords":   "No se encontraron resultados",
-                "sEmptyTable":    "Ningún dato disponible en esta tabla",
-                "sInfo":          "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "sInfoEmpty":     "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "sInfoFiltered":  "(filtrado de un total de _MAX_ registros)",
-                "sInfoPostFix":   "",
-                "sSearch":        "Buscar:",
-                "sUrl":           "",
-                "sInfoThousands":  ",",
-                "sLoadingRecords": "Cargando...",
-                "oPaginate": {
-                    "sFirst":    "Primero",
-                    "sLast":    "Último",
-                    "sNext":    "Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "oAria": {
-                    "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                }
-            }
-      });
-    </script>
-=======
         <script>
             $('#TableName').DataTable({
                 "language": {
@@ -452,7 +416,6 @@
                 }
             });
         </script>
->>>>>>> EsmeraldaRomero
 </body>
 
 </html>

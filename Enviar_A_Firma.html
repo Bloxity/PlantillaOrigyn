@@ -23,11 +23,31 @@
     <!-- <link rel="stylesheet" href="css/sb-admin-2.css"> -->
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> -->
     <style>
-        img {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
-            width: 150px;
+        .inputfile {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+        
+        .fileUpload {
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+        }
+        
+        .fileUpload input.upload {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
         }
         
         .btn-file {
@@ -71,7 +91,7 @@
             <hr class="sidebar-divider my-0">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="Nueva_Empresa.html">
+                <a class="nav-link" href="indexEmpresa.html">
                     <i class="fas fa-fw fa-house-user"></i>
                     <span>Dashboard</span></a>
                 <a class="nav-link" href="Listado_Expendientes_Empresa.html">
@@ -248,8 +268,8 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="custom-file">
-                                                            <input id="logo" type="file" class="custom-file-input">
-                                                            <label for="logo" class="custom-file-label">...</label>
+                                                            <input id="image1" type="file" class="custom-file-input">
+                                                            <label id="fichero" for="image1" class="custom-file-label">...</label>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -264,8 +284,8 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="custom-file">
-                                                            <input id="logo" type="file" class="custom-file-input">
-                                                            <label for="logo" class="custom-file-label">...</label>
+                                                            <input id="image2" type="file" class="custom-file-input">
+                                                            <label id="fichero2" for="image2" class="custom-file-label">...</label>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -435,8 +455,8 @@
                         </div>
                         <div class="modal-body">¿Estas seguro que deseas cerrar la sesión?</div>
                         <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                            <a class="btn btn-primary" href="login.html">Cerrar</a>
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
+                            <a class="btn btn-primary" href="login.html">Si</a>
                         </div>
                     </div>
                 </div>
@@ -477,6 +497,18 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
+
+    <script>
+        document.getElementById('image1').onchange = function() {
+            console.log(this.value);
+            document.getElementById('fichero').innerHTML = document.getElementById('image1').files[0].name;
+        }
+        document.getElementById('image2').onchange = function() {
+            console.log(this.value);
+            document.getElementById('fichero2').innerHTML = document.getElementById('image2').files[0].name;
+        }
+    </script>
+
 </body>
 
 </html>
