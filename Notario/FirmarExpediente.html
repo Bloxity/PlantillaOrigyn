@@ -191,23 +191,29 @@
                                             <div class="col-md-2">
                                               <label class="my-1 mr-2">Certificado</label>
                                             </div>
-                                            <div class="col-md-10">
-                                              <input type="file" class="form-control">
-                                            </div>
+                                            <div class="col-md-9">
+                                              <div class="custom-file">
+                                                  <input id="archivoCertificado" type="file" class="custom-file-input">
+                                                  <label id="archivoRemplazoCertificado" for="archivoCertificado" class="custom-file-label"></label>
+                                              </div>
+                                          </div>
                                           </div><br>
                                           <div class="row">
                                             <div class="col-md-2">
                                               <label class="my-1 mr-2">Llave</label>
                                             </div>
-                                            <div class="col-md-10">
-                                              <input type="file" class="form-control">
-                                            </div>
+                                            <div class="col-md-9">
+                                              <div class="custom-file">
+                                                  <input id="archivoLlave" type="file" class="custom-file-input">
+                                                  <label id="archivoRemplazollave" for="archivoLlave" class="custom-file-label"></label>
+                                              </div>
+                                          </div>
                                           </div><br>
                                           <div class="row">
                                             <div class="col-md-2">
                                               <label class="my-1 mr-2">Contraseña</label>
                                             </div>
-                                            <div class="col-md-10">
+                                            <div class="col-md-9">
                                                 <input type="password" class="form-control">
                                             </div>
                                           </div><br>
@@ -291,7 +297,18 @@
   <!-- Page level custom scripts -->
   <script src="../js/demo/chart-area-demo.js"></script>
   <script src="../js/demo/chart-pie-demo.js"></script>
-
+  <script>
+    document.getElementById('archivoCertificado').onchange = function() {
+        console.log(this.value);
+        document.getElementById('archivoRemplazoCertificado').innerHTML = document.getElementById('archivoCertificado').files[0].name;
+    }
+    document.getElementById('archivoLlave').onchange = function() {
+        console.log(this.value);
+        document.getElementById('archivoRemplazollave').innerHTML = document.getElementById('archivoLlave').files[0].name;
+    }
+    
+    
+</script>
 </body>
 
 </html>
