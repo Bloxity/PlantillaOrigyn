@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>Origym - Notario</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -46,22 +46,13 @@
           <span>Dashboard</span></a>
       </li>
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#menuNotario" aria-expanded="true" aria-controls="menuNotario">
-          <i class="fas fa-fw fa-book-reader"></i>
-          <span>Notario</span></a>
-          <div id="menuNotario" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-              <!--<h6 class="collapse-header">Componentes:</h6> -->
-              <a class="collapse-item" href="ListadoExpedientes.html">Listado de Expedientes</a>
-            </div>
-          </div>
-      </li>
-      <hr class="sidebar-divider">
-      <li class="nav-item active">
+      <li class="nav-item">
+        <a class="nav-link" href="ListadoExpedientes.html">
+            <i class="fas fa-fw fa-book-reader"></i>
+            <span>Listado de Expedientes</span></a>
         <a class="nav-link" href="login.html">
-          <i class="fas fa-fw fa-sign-out-alt"></i>
-          <span>Cerrar Sesión</span></a>
+            <i class="fas fa-fw fa-sign-in-alt"></i>
+            <span>Cerrar Sesión</span></a>
       </li>
       
 
@@ -86,7 +77,15 @@
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
-                    
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+                <img src="img/logoOrigyn.png" style="max-width: 100%; width: auto; height: auto;">
+            </div>
+        </form>         
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
@@ -385,7 +384,7 @@
   </a>
 
    <!-- Logout Modal-->
-   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -396,7 +395,7 @@
         </div>
         <div class="modal-body">Da click en "Salir" cuando estés listo para cerrar sesión.</div>
         <div class="modal-footer">
-          <button class="btn btn-danger" type="button" data-dismiss="modal">Cancelar</button>
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
           <a class="btn btn-primary" href="login.html">Salir</a>
         </div>
       </div>

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>Origyn - Notario</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -46,22 +46,13 @@
           <span>Dashboard</span></a>
       </li>
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#menuNotario" aria-expanded="true" aria-controls="menuNotario">
-          <i class="fas fa-fw fa-book-reader"></i>
-          <span>Notario</span></a>
-          <div id="menuNotario" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-              <!--<h6 class="collapse-header">Componentes:</h6> -->
-              <a class="collapse-item" href="ListadoExpedientes.html">Listado de Expedientes</a>
-            </div>
-          </div>
-      </li>
-      <hr class="sidebar-divider">
-      <li class="nav-item active">
+      <li class="nav-item">
+        <a class="nav-link" href="ListadoExpedientes.html">
+            <i class="fas fa-fw fa-book-reader"></i>
+            <span>Listado de Expedientes</span></a>
         <a class="nav-link" href="login.html">
-          <i class="fas fa-fw fa-sign-out-alt"></i>
-          <span>Cerrar Sesión</span></a>
+            <i class="fas fa-fw fa-sign-in-alt"></i>
+            <span>Cerrar Sesión</span></a>
       </li>
 
       <!-- Divider -->
@@ -86,11 +77,12 @@
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
-          <ul class="navbar-nav">
-                <li class="breadcrumb-item"><img src="img/logoOrigyn.png" height="30px" class="rounded"></li>
-                <li class="breadcrumb-item"><a href="#">Listado de Exedientes</a></li>
-                
-            </ul>
+
+        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+                <img src="img/logoOrigyn.png" style="max-width: 100%; width: auto; height: auto;">
+            </div>
+        </form> 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
             <div class="topbar-divider d-none d-sm-block"></div>
@@ -164,7 +156,7 @@
                                   <div class="col-4">
                                     <div class="row">
                                       <div class="col-md-12">
-                                        <strong>Razón Socal: </strong> 
+                                        <strong>Razón Social: </strong> 
                                       </div>
                                       <div class="col-md-12">
                                         <label>Soluciones Tecnológicas SAS de CV</label>
@@ -267,15 +259,15 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Deseas salir?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-body">Da click en "Salir" cuando estés listo para cerrar sesión.</div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+          <a class="btn btn-primary" href="login.html">Salir</a>
         </div>
       </div>
     </div>
