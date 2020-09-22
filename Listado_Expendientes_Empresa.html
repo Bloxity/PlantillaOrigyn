@@ -81,6 +81,75 @@
                         </div>
                     </form>
                     <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                      <i class="fas fa-search fa-sm"></i>
+                                    </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alertas
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Septiembre 10, 2020</div>
+                                        <span class="font-weight-bold">Revisar nuevo Expediente</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-pen-fancy text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Septiembre 17, 2020</div>
+                                        Expediente firmado correctamente.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Setiembre 18, 2020</div>
+                                        Alerta: Expediente <strong>A0009001</strong> fue rechazado.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Más Alertas</a>
+                            </div>
+                        </li>
+
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -198,7 +267,7 @@
                                         <tr>
                                             <th>No. Expediente</th>
                                             <th>RFC</th>
-                                            <th>Razon Social</th>
+                                            <th>Razón Social</th>
                                             <th>Giro</th>
                                             <th>Estatus</th>
                                             <th>Acciones</th>
@@ -210,14 +279,14 @@
                                             <td>AAA010101AAA</td>
                                             <td>Importaciones Rodriguez SA de CV</td>
                                             <td>Industrial</td>
-                                            <td style="background: green; color:white;">Firmato/Valido</td>
+                                            <td style="background: #0a6f24; color:white;">Firmato/Valido</td>
                                             <td style="text-align: center;">
                                                 <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" id="BtnVer" data-target="#modalArchivo">
                                                     <!-- <i class="fas fa-eye fa-sm text-white-20"></i> -->
                                                     Ver
                                                 </button>
                                                 <a href="../documentos/Ejemplo_Resumen.pdf" download="Archivo" download target="_blank" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-20"></i> Descargar</a>
-                                                <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-warning shadow-sm" data-toggle="modal" data-target="#modalCompartir">
+                                                <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-warning shadow-sm" data-toggle="modal" data-target="#modalCompartir" style="background: #3390FF;">
                                                     <!-- <i class="fas fa-share-alt fa-sm text-white-20"></i> -->
                                                     Compartir
                                                 </button>
@@ -228,7 +297,7 @@
                                             <td>CCC010101CCC</td>
                                             <td>Comercializadora Mexicana SA de CV</td>
                                             <td>Comercial</td>
-                                            <td style="background: red; color:white;">Rechazado</td>
+                                            <td style="background: #901c11; color:white;">Rechazado</td>
                                             <td style="text-align: center">
                                                 <a href="Corregir_Documentos.html">
                                                     <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">
@@ -245,7 +314,7 @@
                                             <td style="text-align: center;background-color: #595f5999;color:white;">Pendiente</td>
                                             <td style="text-align: center;">
                                                 <a href="Enviar_A_Firma.html">
-                                                    <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-dark shadow-sm">
+                                                    <button type="button" class="d-none d-sm-inline-block btn btn-sm shadow-sm" style="background: #FF9633;color:white;">
                                                         Enviar A Firma
                                                     </button>
                                                 </a>
@@ -353,7 +422,7 @@
                             </div>
                             <div class="modal-body">Da click en "Salir" cuando éstes listo para cerrar sesión</div>
                             <div class="modal-footer">
-                                <button class="btn btn-danger" type="button" data-dismiss="modal">Cancelar</button>
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                                 <a class="btn btn-primary" href="login.html">Salir</a>
                             </div>
                         </div>
