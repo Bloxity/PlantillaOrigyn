@@ -97,9 +97,12 @@
                 <a class="nav-link" href="Listado_Expendientes_Empresa.html">
                     <i class="fas fa-fw fa-list"></i>
                     <span>Lista de Empresas</span></a>
-                <a class="nav-link" href="Nueva_Empresa.html">
+                <a class="nav-link" href="ListadoCompartirExpedientes.html">
+                    <i class="fas fa-fw fa-list"></i>
+                    <span>Expediente Compartido</span></a>
+                <!-- <a class="nav-link" href="Nueva_Empresa.html">
                     <i class="fas fa-fw fa-plus-square"></i>
-                    <span>Nueva Empresa</span></a>
+                    <span>Nueva Empresa</span></a> -->
                 <a class="nav-link" href="login.html">
                     <i class="fas fa-fw fa-sign-in-alt"></i>
                     <span>Cerrar Sesión</span></a>
@@ -307,10 +310,56 @@
                         <div class="card-body">
                             <div class="col-md-12">
                                 <div class="row">
-                                    <div class="col-md-4" style="text-align: right;">
-                                        Notario / Federatario
+                                    <div class="col-md-4">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                Estado:
+                                            </div>
+                                            <div class="col-md-9">
+                                                <Select class="form-control">
+                                                    <option value="1">-- Selecciona un Estado --</option>
+                                                    <option value="2">Estado de México</option>
+                                                    <option value="3">Guerrrero</option>
+                                                    <option value="4">Michoacan</option>
+                                                </Select>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-4">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                Municipio:
+                                            </div>
+                                            <div class="col-md-9">
+                                                <Select class="form-control">
+                                                    <option value="1">-- Selecciona un Municipio --</option>
+                                                    <option value="2">Toluca</option>
+                                                    <option value="3">San Mateo Atenco</option>
+                                                </Select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                Tipo:
+                                            </div>
+                                            <div class="col-md-9">
+                                                <Select class="form-control">
+                                                    <option value="1">-- Selecciona una Opción --</option>
+                                                    <option value="2">Notario</option>
+                                                    <option value="2">Corredor</option>
+                                                </Select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        Notario / Federatario
+                                    </div>
+                                    <div class="col-md-9">
                                         <Select class="form-control">
                                             <option value="1">-- Selecciona una Opción --</option>
                                             <option value="2">Notario Aguilar Godinez - Notaria No. 74</option>
@@ -325,7 +374,7 @@
                                     <div class="col-md-6 divazul">
                                         <div row>
                                             <div class="col-md-12" style="background: #4e73df;text-align: center;color: white;">
-                                                Firmar Expediente
+                                                Enviar Solicitud de Expediente
                                             </div>
                                         </div>
                                         <br>
@@ -384,7 +433,7 @@
                                     <div class="col-md-3"></div>
                                     <div class="col-md-6" style="text-align: right;color: #4e73df;">
                                         <a href="Listado_Expendientes_Empresa.html">
-                                            <u><h3>Firmar y Enviar</h3></u>
+                                            <u><h3>Firmar Solicitud</h3></u>
                                         </a>
                                     </div>
                                     <div class="col-md-3"></div>
