@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Origyn-Visor</title>
+  <title>Origyn-Solicitudes</title>
   <script type="text/javascript">
     function GeneraPagina()
     {
@@ -58,13 +58,12 @@
           <a class="nav-link" href="Visor-Principal.html">
               <i class="fas fa-fw fa-book-reader"></i>
               <span>Visor de Expedientes</span></a>
-              <a class="nav-link"  href="VisorSolicitudes.html">
+              <a class="nav-link" href="VisorSolicitudes.html">
                 <i class="fas fa-fw fa-book-reader"></i>
                 <span>Solicitudes de Expedientes</span></a>
-
-              <a class="nav-link"  data-toggle="modal" data-target="#modalFormulario">
-                <i class="fas fa-fw fa-book-reader"></i>
-                <span>Nueva Solicitud</span></a>
+                <a class="nav-link"  data-toggle="modal" data-target="#modalFormulario">
+                    <i class="fas fa-fw fa-book-reader"></i>
+                    <span>Nueva Solicitud</span></a>
           <a class="nav-link" href="login.html">
               <i class="fas fa-fw fa-sign-out-alt"></i>
               <span>Cerrar Sesión</span></a>
@@ -144,7 +143,7 @@
       <div class="card">
         <div class="card-body">
           <div class="d-sm-flex align-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Listado de Expedientes</h1>
+            <h1 class="h3 mb-0 text-gray-800">Solicitudes de Expedientes</h1>
           </div>   
 
           <div class="card border-primary mb-12">
@@ -206,7 +205,7 @@
                               <i class="fas fa-search fa-sm"></i>
                             </div>
                           </div>
-                          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="No.Expediente/ RFC / Razón Social / Giro">
+                          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="RFC">
                         </div>
                       </div>
                     </div>
@@ -223,91 +222,44 @@
                 </div>
               </div>
             </div>
-          </div><br><br> 
+          </div>
+          <br>
+          <button type="button" class="btn btn-primary float-left" data-toggle="modal" id="btnSolicitud" data-target="#modalFormulario">
+            <i class="far fa-"></i>&nbsp;Nueva Solicitud
+        </button>
+          <br><br> 
           <div class="table-responsive">
             <table class="table table-bordered" id="TablaListaExpediente" width="100%" cellspacing="0">
               <thead>
-                <tr>
-                  <th>Nombre Exediente</th>
+                <tr>                  
                   <th>Rfc</th>
-                  <th>Razón Social</th>
-                  <th>Giro</th>
+                  <th>Fecha de Solicitud</th>                  
                   <th>Estatus</th>                  
                   <th>Acciones</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>A0009001</td>
+                <tr>                  
                   <td>AAA010101AAA</td>
-                  <td>Importaciones Rodríguez SA de CV
-                  </td>
-                  <td>Industrial</td>
-                  <td style="background-color: #0a6f24;color:white">Firmado</td>
-                  
+                  <td>10/09/2020</td>                  
+                  <td style="background-color: #0a6f24;color:white">Recibido</td>                  
                   <td class="text-center">
                     <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" id="BtnVer" data-target="#modalArchivo">
-                      Ver
-                  </button>
-                  <a href="VisorDescarga.pdf" download="Archivo" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-20"></i> Descargar</a>                    
+                      Ver Expediente
+                  </button>                  
                   </td>
                 </tr>
-                <tr>
-                  <td>A0009002</td>
+                <tr>                  
                   <td>BBB010101BBB</td>
-                  <td>Soluciones Tecnológicas SAS de CVs</td>
-                  <td>Servicios</td>
-                  <td style="background-color: #595f5999;color:white">Pendiente</td>
+                  <td>10/09/2020</td>                  
+                  <td style="background-color: #901c11;color:white">Pendiente</td>
                   
                   <td class="text-center">
                     <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" id="BtnVer" data-target="#modalArchivo">
-                      Ver
-                  </button>
-                  <a href="VisorDescarga.pdf" download="Archivo" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-20"></i> Descargar</a>                    
+                      Cancelar Solicitud
+                  </button>                  
                   </td>
-                </tr>
-                <tr>
-                  <td>A0009003</td>
-                  <td>CCC010101CCC</td>
-                  <td>Comercializadora Mexicana SA de CV</td>
-                  <td>Comecial</td>
-                  <td style="background-color: #901c11; color: white">Rechazado</td>
-                  
-                  <td class="text-center">
-                    <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" id="BtnVer" data-target="#modalArchivo">
-                      Ver
-                  </button>
-                  <a href="VisorDescarga.pdf" download="Archivo" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-20"></i> Descargar</a>                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>A0009004</td>
-                  <td>DDD010101DDD</td>
-                  <td>Centro Médico Salud Digna</td>
-                  <td>Salud</td>
-                  <td style="background-color: #0a6f24;color:white">Firmado</td>
-                  
-                  <td class="text-center">
-                    <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" id="BtnVer" data-target="#modalArchivo">
-                      Ver
-                  </button>
-                  <a href="VisorDescarga.pdf" download="Archivo" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-20"></i> Descargar</a>                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>PREP01</td>
-                  <td>PPPPPPP01</td>
-                  <td>S.A. Prearatoría Oficial</td>
-                  <td>Educativa</td>
-                  <td style="background-color: #595f5999;color:white">Pendiente</td>
-                  
-                  <td class="text-center">
-                    <button type="button" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" id="BtnVer" data-target="#modalArchivo">
-                      Ver
-                  </button>
-                  <a href="VisorDescarga.pdf" download="Archivo" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-20"></i> Descargar</a>                    
-                  </td>
-                </tr>                      
+                </tr>                
               </tbody>
            </table>
           </div>
@@ -346,36 +298,36 @@
 </div>
 
 <div class="modal inmodal fade" id="modalFormulario" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-content">
-      <div class="modal-content">
-          <div class="modal-header" style="padding: 15px 15px">
-              <div class="col-md-12">
-                  <div class="row">
-                      <div class="col-md-8">
-                          <h4 class="modal-title text-center style="text-align: center;">Solicitud de Expediente</h4>
-                      </div>
-                      <div class="col-md-4">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="modal-body" style="padding: 2px 10px 10px 10px;">
-              <form >
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">RFC de Empresa</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >                      
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Observaciones</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" >
-                  </div>                    
-                  <button type="submit" class="btn btn-primary text-center">Enviar Solicitud</button>
-                </form>
-          </div>           
-      </div>
+    <div class="modal-dialog modal-content">
+        <div class="modal-content">
+            <div class="modal-header" style="padding: 15px 15px">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4 class="modal-title text-center style="text-align: center;">Solicitud de Expediente</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body" style="padding: 2px 10px 10px 10px;">
+                <form >
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">RFC de Empresa</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >                      
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Observaciones</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" >
+                    </div>                    
+                    <button type="submit" class="btn btn-primary text-center">Enviar Solicitud</button>
+                  </form>
+            </div>           
+        </div>
+    </div>
   </div>
-</div>
   
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
