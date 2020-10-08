@@ -419,107 +419,27 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <div class="d-sm-flex align-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-primary">Datos Representante Legal</h1>
-                    </div>
-                    <div class="card border-primary mb-12">
-                        <div class="card-body text-primary">
-                           
-                            <div class="col-md-12">
-                                <div class="form-group row">
-                                    <div class="col-md-12">
-                                        <div class="row ">
-                                            <div class="col-12">
-                                                <div class="row">
-                                                    <div class="col-8">
-                                                        <div class="row">
-                                                            <div class="col-md-2">
-                                                                <label class="my-1 mr-4">Correo</label>
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <div class="row">
-                                                            <div class="col-md-2">
-                                                                <label class="my-1 mr-4">Contraseña</label>
-                                                            </div>
-                                                            <div class="col-md-8">
-                                                                <input type="password" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group row">
-                                    <div class="col-md-12">
-                                        <div class="row ">
-                                            <div class="col-12">
-                                                <div class="row">
-                                                    <div class="col-8">
-                                                        <div class="row">
-                                                            <div class="col-md-2">
-                                                                <label class="my-1 mr-4">Nombre</label>
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group row">
-                                    <div class="col-md-12">
-                                        <div class="row ">
-                                            <div class="col-12">
-                                                <div class="row">
-                                                
-                                                    <div class="col-12">
-                                                        <div class="col-md-12">
-                                                            <div class="row">
-                                                                <div class="col-md-12">
-                                                                    <div class="row">
-                                                                        <div class="col-md-4" style="text-align: right;">
-                                                                            Agregar Documento
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="custom-file">
-                                                                                <input id="agregarDoc" type="file" class="custom-file-input">
-                                                                                <label id="docEmpre" for="agregarDoc" class="custom-file-label">...</label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div><br><br>
-                    <div class="d-sm-flex align-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-primary">Nueva Empresa</h1>
                     </div>
                     <div class="card border-primary mb-12">
                         <div class="card-body text-primary">
-                           
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-4" style="text-align: right;">
+                                                Agregar Documento
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="custom-file">
+                                                    <input id="agregarDoc" type="file" class="custom-file-input">
+                                                    <label id="docEmpre" for="agregarDoc" class="custom-file-label">...</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-12">
                                 <div class="form-group row">
                                     <div class="col-md-12">
@@ -654,7 +574,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- /.container-fluid -->
                 </div>
                 <!-- End of Main Content -->
@@ -709,18 +628,7 @@
         <!-- Custom scripts for all pages-->
         <script src="js/sb-admin-2.min.js"></script>
 
-        <script>
-            document.getElementById('image1').onchange = function() {
-                console.log(this.value);
-                document.getElementById('fichero').innerHTML = document.getElementById('image1').files[0].name;
-            }
-    
-            document.getElementById('agregarDoc').onchange = function() {
-                console.log(this.value);
-                document.getElementById('docEmpre').innerHTML = document.getElementById('agregarDoc').files[0].name;
-            }
-            
-        </script>
+        
     
 
 </body>
